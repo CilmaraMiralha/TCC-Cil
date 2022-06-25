@@ -3,13 +3,10 @@ session_start();
 require_once "funcoes.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
     <title>Cadastro</title>
-</head>
 <body>
+    <main>
+        <?php include('../materialize/cabecalho.php')?>
     <form action="cadastro-cliente.php" method="post">
         <h1>Cadastro:</h1>
         Nome: <input type="text" name="nome" required><br><br>
@@ -22,7 +19,8 @@ require_once "funcoes.php";
 <br>
         <input type="submit" value="Cadastrar">
 
-
 </form>
+</main>
 </body>
-</html>
+
+<?php require "../materialize/rodapé.php";?>

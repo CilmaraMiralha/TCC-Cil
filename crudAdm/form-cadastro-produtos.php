@@ -1,11 +1,9 @@
 <title>Cadastro de produtos</title>
 
-<?php require "../materialize/cabeçalho.php";?>
-
-
-
 <body>
-    <main class="container">
+    <main>
+    <?php require "../materialize/cabeçalho.php";?>
+    <div class="container">
     <form action="cadastro-produtos.php" method="post" enctype="multipart/form-data">
         <h1>Cadastro de Produto:</h1>
         Nome do produto: <input type="text" name="nomeproduto"><br><br>
@@ -16,6 +14,7 @@
 <br>
         <input type="submit" value="Cadastrar">
     </form>
+    </div>
 </main>
 </body>
 

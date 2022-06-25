@@ -6,11 +6,10 @@ $produto = mysqli_fetch_assoc($resultado);
 ?>
 
 <title><?=$produto['nomeproduto']?></title>
-
-<?php require "../materialize/cabeçalho.php";?>
-
 <body>
-<main class="container">
+<main>
+<?php require "../materialize/cabeçalho.php";?>
+<div class="container">
     <form action="edita-produto.php" method="post" enctype="multipart/form-data">
         <h1>Alterar produto:</h1>
         <input type="hidden" name = "id" value = "<?= $produto['id'] ?>">
@@ -22,6 +21,7 @@ $produto = mysqli_fetch_assoc($resultado);
         <br>
         <input type="submit" value="Alterar">
     </form>
+    </div>
 </main>        
 </body>
 
