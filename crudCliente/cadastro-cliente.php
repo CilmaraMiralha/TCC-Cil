@@ -9,7 +9,7 @@ $sobrenome = $_POST['sobrenome'];
 $email = $_POST['email'];
 $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO `clientes`( `nome`,`sobremome`, `email`, `senha`) VALUES ('$nome','$sobrenome','$email','$senha')";
+$sql = "INSERT INTO `clientes`( `nome`,`sobrenome`, `email`, `senha`) VALUES ('$nome','$sobrenome','$email','$senha')";
 $resultado = mysqli_query($conexao, $sql);
 
 if($resultado){
