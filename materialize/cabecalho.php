@@ -53,7 +53,7 @@ main{
         <li><a class="pink-text" href="../crudCliente/cadastrar.php">Cadastre-se</a></li>
         <?php }else{ ?>
 
-          <li><a class='dropdown-trigger pink-text' href='#' data-target='dropdown'> <i class="material-icons right">arrow_drop_down</i> <?= $_SESSION['nome']; ?></a>
+          <li><a class='dropdown-trigger coverTrigger pink-text' href='#' data-target='dropdown'> <i class="material-icons right">arrow_drop_down</i> <?= $_SESSION['nome']; ?></a>
 
           <ul id='dropdown' class='dropdown-content'>
            <li><a href="#!" class="pink-text">Meus pedidos</a></li>

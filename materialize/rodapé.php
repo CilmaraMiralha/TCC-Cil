@@ -75,8 +75,9 @@
     $('.sidenav').sidenav('close');
   });
 
-  $('.dropdown-trigger').dropdown();
-
+  $(".dropdown-trigger").dropdown({
+   coverTrigger: false
+});
   
   
   </script>
