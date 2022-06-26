@@ -22,7 +22,13 @@ var_dump($_SESSION);
 </head>
 
 <nav class="nav-extended yellow lighten-3">
+  <?php if(isset($_SESSION['id'])){
+    if($_SESSION['nvl_acesso'] == 2){ ?>
+
 <button href="#" data-target="slide-out" class = "sidenav-trigger float-left btn-flat" ><i class="material-icons">menu</i></button> 
+
+    <?php }} ?>
+    
     <div class="nav-wrapper container">
 
       <a href="#"><img src="../imagens/DeCoracao.png" width="100"></a>
