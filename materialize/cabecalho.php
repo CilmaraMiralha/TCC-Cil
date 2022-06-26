@@ -58,7 +58,7 @@ var_dump($_SESSION);
              </form>
             </li>
             </div>
-            </div>
+            
       </ul>
          
       </div>
@@ -72,7 +72,7 @@ var_dump($_SESSION);
       <ul id="slide-out" class="sidenav">
     <li><div class="user-view">
       <div class="background">
-        <img src="images/office.jpg">
+        
       </div>
       <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
       <a href="#name"><span class="white-text name">John Doe</span></a>
