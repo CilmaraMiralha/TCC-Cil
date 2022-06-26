@@ -13,11 +13,11 @@ require_once "funcoes.php";
        <div style="color: red;"><?= msg() ?></div>
        Email: <input type="email" name="email"><br><br>
        Senha: <input type="password" name="senha"><br><br>
-       <input type= "submit" value="Enviar">
+       <input type= "submit" value="Enviar" class="waves-effect waves-light btn">
 </form>
 
        <br><br>
-       Não possui uma conta? <a href="cadastro-cliente.php">Cadastre-se</a>
+       Não possui uma conta? <a href="cadastro-cliente.php" class="pink-text" id="sublinhado">Cadastre-se</a>
        </div>
 </main>
 </body>

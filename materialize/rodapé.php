@@ -13,7 +13,9 @@
 <script>
  $(document).ready(function(){
     $('.sidenav').sidenav();
+    $('.sidenav').sidenav('close')
   });
 
+  
   </script>
  </html>

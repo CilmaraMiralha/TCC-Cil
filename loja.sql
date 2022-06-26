@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25-Jun-2022 às 23:46
+-- Tempo de geração: 26-Jun-2022 às 04:33
 -- Versão do servidor: 10.4.21-MariaDB
 -- versão do PHP: 8.0.11
 
@@ -32,8 +32,35 @@ CREATE TABLE `clientes` (
   `nome` varchar(255) NOT NULL,
   `sobrenome` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `senha` varchar(255) NOT NULL
+  `senha` varchar(255) NOT NULL,
+  `nivelAcesso` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `clientes`
+--
+
+INSERT INTO `clientes` (`id`, `nome`, `sobrenome`, `email`, `senha`, `nivelAcesso`) VALUES
+(1, 'cilmara', 'teixeira miralha', 'cilmara@gmail.com', '$2y$10$U80uK15UCQiHYIhN5cbfMem0N7piEhz3rI/ZfAJxWmdiAFrp23lp6', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `nivelacesso`
+--
+
+CREATE TABLE `nivelacesso` (
+  `id` int(11) NOT NULL,
+  `nivelAcesso` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `nivelacesso`
+--
+
+INSERT INTO `nivelacesso` (`id`, `nivelAcesso`) VALUES
+(2, 'Administrador'),
+(3, 'cliente');
 
 -- --------------------------------------------------------
 
@@ -80,6 +107,13 @@ INSERT INTO `produtos` (`id`, `nomeproduto`, `preco`, `quantidade`, `descricao`,
 -- Índices para tabela `clientes`
 --
 ALTER TABLE `clientes`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `chaveEstrangeira_nivelAcesso` (`nivelAcesso`);
+
+--
+-- Índices para tabela `nivelacesso`
+--
+ALTER TABLE `nivelacesso`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -107,7 +141,13 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de tabela `nivelacesso`
+--
+ALTER TABLE `nivelacesso`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `pedidos`
@@ -124,6 +164,12 @@ ALTER TABLE `produtos`
 --
 -- Restrições para despejos de tabelas
 --
+
+--
+-- Limitadores para a tabela `clientes`
+--
+ALTER TABLE `clientes`
+  ADD CONSTRAINT `chaveEstrangeira_nivelAcesso` FOREIGN KEY (`nivelAcesso`) REFERENCES `nivelacesso` (`id`);
 
 --
 -- Limitadores para a tabela `pedidos`
