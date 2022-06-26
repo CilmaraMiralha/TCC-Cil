@@ -16,6 +16,7 @@ $cliente = mysqli_fetch_assoc($resultado);
 if(password_verify($senha, $cliente['senha'])){
     $_SESSION['id'] = $cliente['id'];
     $_SESSION['nvl_acesso'] = $cliente['nivelAcesso'];
+    $_SESSION['nome'] = $cliente['nome'];
 }else{
     echo "Senha incorreta";
 }

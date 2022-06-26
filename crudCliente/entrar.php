@@ -40,7 +40,7 @@ require_once "funcoes.php";
 
        <div class="row">
         <div class="input-field col s6">
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email" class="validate" name="email" required>
           <label for="email">E-mail</label>
          <span class="helper-text" data-error="E-mail incorreto">exemplo@gmail.com</span>
         </div>
@@ -48,8 +48,8 @@ require_once "funcoes.php";
 
        <div class="row">
         <div class="input-field col s6">
-          <input id="password" type="password" class="validate">
-          <label for="password">Senha</label>
+          <input id="senha" type="password" class="validate" name="senha" required>
+          <label for="senha">Senha</label>
         </div>
       </div>
        
@@ -58,7 +58,7 @@ require_once "funcoes.php";
 </div>
 </form>
 
-       Não possui uma conta? <a href="cadastrar.php" class="pink-text" style="text-decoration:underline"> Cadastre-se</a>
+       <p>Não possui uma conta? <a href="cadastrar.php" class="pink-text" style="text-decoration:underline"> Cadastre-se</a></p>
        </div>
 </main>
 </body>

@@ -7,9 +7,12 @@
            
 <?php include('../materialize/cabecalho.php') ?>
 
-   
+  <div class="center"> 
+<h1>Bem vindo!</h1>
 
-    
+<h2>-Novidades-</h2>
+</div>
+
     </main>
 </body>
 

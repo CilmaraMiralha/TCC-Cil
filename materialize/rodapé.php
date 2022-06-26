@@ -72,10 +72,12 @@
 
 <script>
  $(document).ready(function(){
-    $('.sidenav').sidenav();
-    $('.sidenav').sidenav('close')
+    $('.sidenav').sidenav('close');
   });
 
+  $('.dropdown-trigger').dropdown();
+
+  
   
   </script>
  </html>

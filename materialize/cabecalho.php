@@ -52,7 +52,14 @@ main{
         <li><a class="pink-text" href="../crudCliente/entrar.php">Entrar</a></li>
         <li><a class="pink-text" href="../crudCliente/cadastrar.php">Cadastre-se</a></li>
         <?php }else{ ?>
-          <li> <a class = "pink-text" href = "../crudCliente/sairdaconta.php">Sair</a></li>
+
+          <li><a class='dropdown-trigger pink-text' href='#' data-target='dropdown'> <i class="material-icons right">arrow_drop_down</i> <?= $_SESSION['nome']; ?></a>
+
+          <ul id='dropdown' class='dropdown-content'>
+           <li><a href="#!" class="pink-text">Meus pedidos</a></li>
+           <li class="divider" tabindex="-1"></li>
+           <li><a class = "pink-text" href = "../crudCliente/sairdaconta.php">Sair</a></li>
+         </ul></li>
 
           <?php } ?>
       </ul>
@@ -62,7 +69,7 @@ main{
      <div class="row">
       <div class="col offset-s3">
         <li class="tab"><a class="pink-text" href="../index/index.php">Início</a></li>
-        <li class="tab"><a class="pink-text" href="../crudAdm/lista-produtos">Produtos</a></li>
+        <li class="tab"><a class="pink-text" href="../crudAdm/lista-produtos.php">Produtos</a></li>
         <li class="tab"><a class="pink-text" href="#test3">Sobre</a></li>
         <li class="tab"><a class="pink-text" href="#test4">Contato</a></li>
         
