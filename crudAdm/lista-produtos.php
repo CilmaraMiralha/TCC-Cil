@@ -15,7 +15,7 @@ function confirmacao(id) {
 
 <title>Produtos</title>
 
-<?php require "../materialize/cabeçalho.php";?>
+<?php require "../materialize/cabecalho.php";?>
 
 <body>
 <main class="container">

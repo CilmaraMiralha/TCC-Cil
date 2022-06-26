@@ -2,7 +2,7 @@
 
 <body>
     <main>
-    <?php require "../materialize/cabeçalho.php";?>
+    <?php require "../materialize/cabecalho.php";?>
     <div class="container">
     <form action="cadastro-produtos.php" method="post" enctype="multipart/form-data">
         <h1>Cadastro de Produto:</h1>

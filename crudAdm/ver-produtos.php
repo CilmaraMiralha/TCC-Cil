@@ -8,7 +8,7 @@ $produto = mysqli_fetch_assoc($resultado);
 
 <title><?=$produto['nomeproduto']?></title>
 
-<?php require "../materialize/cabeçalho.php";?>
+<?php require "../materialize/cabecalho.php";?>
 
 <body>
 <main class="container">
