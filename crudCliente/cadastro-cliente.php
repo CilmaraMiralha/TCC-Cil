@@ -15,9 +15,7 @@ $resultado = mysqli_query($conexao, $sql);
 if($resultado){
     $id = mysqli_insert_id($conexao);
     $_SESSION ['id'] = $id;
-    $_SESSION['nvl_acesso'] = $cliente['nivelAcesso'];
-    $_SESSION['nome'] = $cliente['nome'];
-   header("location:../index/index.php");
+   header("location: nivelacesso.php");
 } else{
     $_SESSION ['mensagem'] = "Erro ao salvar o usuário no banco de dados!". 
     mysqli_errno($conexao).": ". mysqli_error($conexao);
