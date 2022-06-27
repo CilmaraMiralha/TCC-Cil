@@ -1,5 +1,5 @@
 <?php 
-require_once ("nivelAcesso-Adm.php");
+require_once "nivelAcesso-Adm.php";
 ?>
 
 
@@ -48,10 +48,10 @@ main{
       <ul class="tabs tabs-transparent">
      <div class="row">
       <div class="col offset-s3">
-        <li class="tab"><a class="pink-text" href="../index/index.php">Início</a></li>
-        <li class="tab"><a class="pink-text" href="../crudAdm/lista-produtos.php">Produtos</a></li>
-        <li class="tab"><a class="pink-text" href="#test3">Sobre</a></li>
-        <li class="tab"><a class="pink-text" href="#test4">Contato</a></li>
+        <li class="tab"><a class="pink-text" href="inicio-Adm.php">Início</a></li>
+        <li class="tab"><a class="pink-text" href="lista-produtos.php">Produtos</a></li>
+        <li class="tab"><a class="pink-text" href="#">Sobre</a></li>
+        <li class="tab"><a class="pink-text" href="#">Contato</a></li>
         
         <li> 
     
@@ -77,13 +77,15 @@ main{
     
       <ul id="slide-out" class="sidenav">
 
-    <li><a href="#" class="sidenav-close"><i class="material-icons">close</i></a></li>
+    <li><a href="#" class="sidenav-close"><i class="material-icons right">close</i></a></li>
     <li><div class="divider"></div></li>
-    <li><a href="../crudAdm/lista-produtos.php">Ver produtos</a></li>
+    <li><a href="lista-produtos.php">Ver produtos</a></li>
     <li><div class="divider"></div></li>
-    <li><a href="../crudAdm/lista-pedidos.php">Ver pedidos</a></li>
+    <li><a href="form-cadastro-produtos.php">Cadastrar produtos</a></li>
     <li><div class="divider"></div></li>
-    <li><a class = "pink-text" href = "../crudCliente/sairdaconta.php">Sair</a></li>
+    <li><a href="lista-pedidos.php">Ver pedidos</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class = "pink-text" href = "../Cliente/sairdaconta.php">Sair</a></li>
     <li><div class="divider"></div></li>
 
   </ul>

@@ -29,7 +29,7 @@ require_once "funcoes.php";
 
 <body>
        <main>
-       <?php include_once ("../inicio/header.php");?>
+       <?php require_once "header.php";?>
        <br>
        <div class="container">
               <h3>Entrar:</h3>
@@ -62,4 +62,4 @@ require_once "funcoes.php";
        </div>
 </main>
 </body>
-<?php require "../materialize/rodapé.php";?>
+<?php include_once "../materialize/rodape.php";?>

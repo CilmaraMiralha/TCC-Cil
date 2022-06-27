@@ -1,5 +1,7 @@
 <?php 
-require_once ("nivelAcesso-Cliente.php");
+require_once "nivelAcesso-Cliente.php";
+
+var_dump($_SESSION);
 ?>
 
 
@@ -44,22 +46,24 @@ main{
           <ul id='dropdown' class='dropdown-content'>
            <li><a href="#!" class="pink-text">Meus pedidos</a></li>
            <li class="divider" tabindex="-1"></li>
-           <li><a class = "pink-text" href = "../crudCliente/sairdaconta.php">Sair</a></li>
+           <li><a href="#!" class="pink-text">Ver conta</a></li>
+           <li class="divider" tabindex="-1"></li>
+           <li><a class = "pink-text" href = "sairdaconta.php">Sair</a></li>
          </ul></li>
 
+         <li><a class="pink-text" href = "carrinho.php"><i class="material-icons">shopping_cart</i></a></li>
       </ul>
 
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
      <div class="row">
       <div class="col offset-s3">
-        <li class="tab"><a class="pink-text" href="../index/index.php">Início</a></li>
-        <li class="tab"><a class="pink-text" href="../crudAdm/lista-produtos.php">Produtos</a></li>
-        <li class="tab"><a class="pink-text" href="#test3">Sobre</a></li>
-        <li class="tab"><a class="pink-text" href="#test4">Contato</a></li>
+        <li class="tab"><a class="pink-text" href="inicio-Cliente.php">Início</a></li>
+        <li class="tab"><a class="pink-text" href="produto-tela-cliente.php">Produtos</a></li>
+        <li class="tab"><a class="pink-text" href="#">Sobre</a></li>
+        <li class="tab"><a class="pink-text" href="#">Contato</a></li>
         
         <li> 
-    
 
             <form action="../materialize/pesquisa.php">
             <div class="input-field">

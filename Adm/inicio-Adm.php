@@ -5,7 +5,7 @@
 
     <main>
            
-<?php include_once ("headerAdm.php");?>
+<?php include_once "headerAdm.php";?>
 
   <div class="center"> 
 <h1>Bem vindo!</h1>
@@ -17,4 +17,4 @@
 </body>
 
 
-<?php include_once("../materialize/rodape.php"); ?>
+<?php include_once "../materialize/rodape.php"; ?>

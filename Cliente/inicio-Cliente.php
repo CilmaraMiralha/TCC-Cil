@@ -5,7 +5,7 @@
 
     <main>
            
-<?php include_once ("headerCliente.php");?>
+<?php require_once "headerCliente.php";?>
 
   <div class="center"> 
 <h1>Bem vindo!</h1>
@@ -16,4 +16,4 @@
     </main>
 </body>
 
-<?php include_once ("../materialize/rodapé.php"); ?>
+<?php include_once "../materialize/rodape.php"; ?>

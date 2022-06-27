@@ -2,7 +2,7 @@
 session_start();
 
 require_once "../conecta.php";
-require "funcoes.php";
+require "../inicio/funcoes.php";
 
 $id = $_SESSION ['id'];
 

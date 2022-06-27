@@ -2,7 +2,7 @@
 
 <body>
     <main>
-    <?php require "headerAdm.php";?>
+    <?php require_once "headerAdm.php";?>
     <div class="container">
     <form action="cadastro-produtos.php" method="post" enctype="multipart/form-data">
         <h1>Cadastro de Produto:</h1>
@@ -17,7 +17,7 @@
     </div>
 </main>
 </body>
-
+<?php include_once "../materialize/rodape.php"; ?>
 
 
 

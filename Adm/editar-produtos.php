@@ -8,7 +8,7 @@ $produto = mysqli_fetch_assoc($resultado);
 <title><?=$produto['nomeproduto']?></title>
 <body>
 <main>
-<?php require "headerAdm.php";?>
+<?php require_once "headerAdm.php";?>
 <div class="container">
     <form action="edita-produto.php" method="post" enctype="multipart/form-data">
         <h1>Alterar produto:</h1>
@@ -25,4 +25,4 @@ $produto = mysqli_fetch_assoc($resultado);
 </main>        
 </body>
 
-<?php require "../materialize/rodapé.php";?>
+<?php include_once "../materialize/rodape.php";?>

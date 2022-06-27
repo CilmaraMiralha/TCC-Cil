@@ -72,7 +72,7 @@
 
 <script>
  $(document).ready(function(){
-    $('.sidenav').sidenav('close');
+    $('.sidenav').sidenav();
   });
 
   $(".dropdown-trigger").dropdown({

@@ -5,9 +5,12 @@ if(!isset($_SESSION)){
 
 var_dump($_SESSION);
 
+
 if(isset($_SESSION['id'])){
-    header("location:inicio-Cliente.php");
+    if($_SESSION['nvl_acesso'] != 3){
+        header("location:../inicio/inicio.php");
+    }
 } else {
-    header("location:../inicio/inicio.php");
+    
 }
 ?>

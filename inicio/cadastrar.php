@@ -42,7 +42,7 @@ require_once "funcoes.php";
 
 <body>
     <main>
-        <?php include_once ("headerCliente.php");?>
+        <?php include_once "header.php";?>
         <div class="container">
 
         <h1>Cadastro:</h1>
@@ -101,4 +101,4 @@ require_once "funcoes.php";
 </main>
 </body>
 
-<?php require "../materialize/rodapé.php";?>
+<?php require "../materialize/rodape.php";?>
