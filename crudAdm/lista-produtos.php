@@ -20,21 +20,33 @@ function confirmacao(id) {
 <body>
 <main class="container">
     
-<br><a href="form-cadastro-produtos.php">Cadastrar produtos</a><br><br>
-    
-    <?php
-    echo "<table>";
-    echo "<thead><th>Imagem do produto</th><th>Nome do produto</th><th>Operações</th></thead><tbody>";
-    foreach($produtos as $chave => $produto){
+<div class="row">
+    <div class="col s12 m7">
+      <div class="card medium">
+        <div class="card-image">
+            <?php foreach ($produtos as $chave => $produto){
+         echo"<img src='../imagens/$produto[foto]'>";?>
+        </div>
+        <div class="card-content">
+        <span class='card-title'><?= $produto['nomeproduto']?></span>
+          <p>Preço: R$ <?= $produto['preco']?></p>
+        </div>
+        <div class="card-action">
+        <?= "<a href='ver-produtos.php?id=$produto[id]'>Ver mais</a>"?>
+            <?php
+            if (isset($_SESSION['id'])) {
+                if($_SESSION ['nvl_acesso'] == 2){
+                echo "<a href='editar-produtos.php?id=$produto[id]'>Editar</a>";
+                echo "<a href='#' onclick = 'confirmacao($produto[id])'>Excluir</a>";
+                }
+            }
+            ?>
 
-        echo "<tr><td> <img src ='../imagens/$produto[foto]' width='100'> </td>";
-        echo "<td>". $produto['nomeproduto']."</td>";
-        echo "<td><a href='ver-produtos.php?id=$produto[id]'>Ver mais </a> / <a href='editar-produtos.php?id=$produto[id]'>Editar</a> / 
-        <a href='#' onclick = 'confirmacao($produto[id])'>Excluir</a></td></tr></tbody>";
-    }
-
-echo "</table>";
-    ?>
+        </div>
+        <?php } ?>
+      </div>
+    </div>
+  </div>
 </main>
 </body>
 
