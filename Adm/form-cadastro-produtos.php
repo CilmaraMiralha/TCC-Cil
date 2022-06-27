@@ -2,7 +2,7 @@
 
 <body>
     <main>
-    <?php require "../materialize/cabecalho.php";?>
+    <?php require "headerAdm.php";?>
     <div class="container">
     <form action="cadastro-produtos.php" method="post" enctype="multipart/form-data">
         <h1>Cadastro de Produto:</h1>
@@ -21,4 +21,4 @@
 
 
 
-<?php require "../materialize/rodapé.php";?>
+

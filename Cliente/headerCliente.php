@@ -1,12 +1,7 @@
 <?php 
-if(!isset($_SESSION))
-session_start();
-
-
-
-var_dump($_SESSION);
-
+require_once ("nivelAcesso-Cliente.php");
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -38,22 +33,12 @@ main{
 </head>
 
 <nav class="nav-extended yellow lighten-3">
-  <?php if(isset($_SESSION['id'])){
-    if($_SESSION['nvl_acesso'] == 2){ ?>
-
-<button href="#" data-target="slide-out" class = "sidenav-trigger float-left btn-flat" ><i class="material-icons">menu</i></button> 
-
-    <?php }} ?>
 
     <div class="nav-wrapper container">
 
       <a href="#"><img src="../imagens/DeCoracao.png" width="100"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <?php if(!isset($_SESSION['id'])) { ?>
-        <li><a class="pink-text" href="../crudCliente/entrar.php">Entrar</a></li>
-        <li><a class="pink-text" href="../crudCliente/cadastrar.php">Cadastre-se</a></li>
-        <?php }else{ ?>
-
+    
           <li><a class='dropdown-trigger coverTrigger pink-text' href='#' data-target='dropdown'> <i class="material-icons right">arrow_drop_down</i> <?= $_SESSION['nome']; ?></a>
 
           <ul id='dropdown' class='dropdown-content'>
@@ -62,7 +47,6 @@ main{
            <li><a class = "pink-text" href = "../crudCliente/sairdaconta.php">Sair</a></li>
          </ul></li>
 
-          <?php } ?>
       </ul>
 
     <div class="nav-content">
@@ -94,25 +78,3 @@ main{
     </div>
   </nav>
 
-  <?php 
-          
-         {
-            if($_SESSION['nvl_acesso'] == 2){  ?>
-
-    
-      <ul id="slide-out" class="sidenav">
-
-  
-    <li><a href="#" class="sidenav-close"><i class="material-icons">close</i></a></li>
-  
-
-    <li><div class="divider"></div></li>
-    <li><a href="../crudAdm/lista-produtos.php">Ver produtos</a></li>
-    <li><div class="divider"></div></li>
-    <li><a href="../crudAdm/lista-pedidos.php">Ver pedidos</a></li>
-    <li><div class="divider"></div></li>
-  
-
-  </ul>
-
-  <?php }}?>

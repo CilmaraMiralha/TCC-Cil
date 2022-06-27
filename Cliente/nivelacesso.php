@@ -16,6 +16,6 @@ var_dump($cliente);
 if($resultado){
     $_SESSION['nvl_acesso'] = $cliente['nivelAcesso'];
     $_SESSION['nome'] = $cliente['nome'];
-   header("location: ../index/index.php");
+   header("location: inicio-Cliente.php");
 }
 ?>

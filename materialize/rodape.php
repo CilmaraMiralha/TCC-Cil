@@ -79,6 +79,5 @@
    coverTrigger: false
 });
   
-  
   </script>
  </html>

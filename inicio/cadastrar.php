@@ -42,7 +42,7 @@ require_once "funcoes.php";
 
 <body>
     <main>
-        <?php include('../materialize/cabecalho.php')?>
+        <?php include_once ("headerCliente.php");?>
         <div class="container">
 
         <h1>Cadastro:</h1>

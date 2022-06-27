@@ -8,7 +8,7 @@ $produto = mysqli_fetch_assoc($resultado);
 <title><?=$produto['nomeproduto']?></title>
 <body>
 <main>
-<?php require "../materialize/cabecalho.php";?>
+<?php require "headerAdm.php";?>
 <div class="container">
     <form action="edita-produto.php" method="post" enctype="multipart/form-data">
         <h1>Alterar produto:</h1>

@@ -5,7 +5,7 @@
 
     <main>
            
-<?php include('../materialize/cabecalho.php') ?>
+<?php include_once ("headerAdm.php");?>
 
   <div class="center"> 
 <h1>Bem vindo!</h1>
@@ -16,4 +16,5 @@
     </main>
 </body>
 
-<?php require "../materialize/rodapé.php";?>
+
+<?php include_once("../materialize/rodape.php"); ?>

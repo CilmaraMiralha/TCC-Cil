@@ -29,7 +29,7 @@ require_once "funcoes.php";
 
 <body>
        <main>
-       <?php require "../materialize/cabecalho.php";?>
+       <?php include_once ("../inicio/header.php");?>
        <br>
        <div class="container">
               <h3>Entrar:</h3>

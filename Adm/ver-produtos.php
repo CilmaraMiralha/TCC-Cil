@@ -8,7 +8,7 @@ $produto = mysqli_fetch_assoc($resultado);
 
 <title><?=$produto['nomeproduto']?></title>
 
-<?php require "../materialize/cabecalho.php";?>
+<?php require "headerAdm.php";?>
 
 <body>
 <main class="container">
@@ -22,4 +22,4 @@ echo "<p>Nome do produto: $produto[descricao]</p>";
 </main>
 </body>
 
-<?php require "../materialize/rodapé.php";?>
+<?php include_once ("../materialize/rodapé.php"); ?>
