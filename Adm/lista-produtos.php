@@ -3,7 +3,6 @@
     $sql = "SELECT * FROM produtos";
     $resultado = mysqli_query($conexao, $sql);
     $produtos = mysqli_fetch_all($resultado, MYSQLI_ASSOC); 
-    var_dump($produtos);
     ?>
 
 <script>
@@ -26,7 +25,7 @@ function confirmacao(id) {
             <?php foreach ($produtos as $chave => $produto){
               ?>
               
-                <div class="col s12 m5">
+                <div class="col s12 m4">
                 <div class="card medium">
                   <div class="card-image">
          <img width = 200 src= "../imagens/<?= $produto['foto'] ?>">
@@ -36,9 +35,9 @@ function confirmacao(id) {
           <p>Preço: R$ <?= $produto['preco']?></p>
         </div>
         <div class="card-action">
-        <?php echo "<a href='ver-produtos.php?id=$produto[id]'>Ver mais</a>";
-              echo "<a href='editar-produtos.php?id=$produto[id]'>Editar</a>";
-              echo "<a href='#' onclick = 'confirmacao($produto[id])'>Excluir</a>";?>
+        <?php echo "<a class='pink-text' href='ver-produtos.php?id=$produto[id]'>Ver mais</a>";
+              echo "<a class='pink-text' href='editar-produtos.php?id=$produto[id]'>Editar</a>";
+              echo "<a class='pink-text' href='#' onclick = 'confirmacao($produto[id])'>Excluir</a>";?>
               
 
 

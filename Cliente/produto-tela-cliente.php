@@ -17,7 +17,7 @@
             <?php foreach ($produtos as $chave => $produto){
               ?>
               
-                <div class="col s12 m5">
+                <div class="col s12 m4">
                 <div class="card medium">
                   <div class="card-image">
          <img width = 200 src= "../imagens/<?= $produto['foto'] ?>">
@@ -27,7 +27,7 @@
           <p>Preço: R$ <?= $produto['preco']?></p>
         </div>
         <div class="card-action">
-        <?= "<a href='ver-produtos-cliente.php?id=$produto[id]'>Ver mais</a>"; ?>
+        <?= "<a class='pink-text' href='ver-produtos-cliente.php?id=$produto[id]'>Ver mais</a>"; ?>
               
 
 
