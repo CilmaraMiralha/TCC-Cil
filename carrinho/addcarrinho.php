@@ -13,9 +13,8 @@ $inserirProduto = "INSERT INTO `carrinho`( `id_produto`, `nome`, `preco`)
 VALUES ('$id_produto','$produto[nomeproduto]','$produto[preco]')";
 $resultado2 = mysqli_query($conexao,$inserirProduto);
 $id = mysqli_insert_id($conexao);
-if($resultado2)
-//header("location:addcarrinho2.php");
-$_SESSION['carrinho'][$id];
- var_dump($_SESSION);
 
+if($resultado2){
+header("location:addcarrinho2.php?id=$id");
+}
 ?>
