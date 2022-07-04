@@ -50,8 +50,8 @@ main{
       <ul class="tabs tabs-transparent">
      <div class="row">
       <div class="col offset-s3">
-        <li class="tab"><a class="pink-text" href="inicio-Adm.php">Início</a></li>
-        <li class="tab"><a class="pink-text" href="lista-produtos.php">Produtos</a></li>
+        <li class="tab"><a class="pink-text" href="../Adm/inicio-Adm.php">Início</a></li>
+        <li class="tab"><a class="pink-text" href="../Adm/lista-produtos.php">Produtos</a></li>
         <li class="tab"><a class="pink-text" href="#">Sobre</a></li>
         <li class="tab"><a class="pink-text" href="#">Contato</a></li>
         

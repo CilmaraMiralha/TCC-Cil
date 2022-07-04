@@ -5,7 +5,7 @@
 
     <main>
            
-<?php include_once "headerAdm.php";?>
+<?php include_once "../headers/headerAdm.php";?>
 
   <div class="center"> 
 <h1>Bem vindo!</h1>

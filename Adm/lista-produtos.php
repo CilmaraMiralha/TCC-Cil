@@ -15,7 +15,7 @@ function confirmacao(id) {
 
 <title>Produtos</title>
 
-<?php require "headerAdm.php";?>
+<?php require "../headers/headerAdm.php";?>
 
 <body>
 <main class="container">
