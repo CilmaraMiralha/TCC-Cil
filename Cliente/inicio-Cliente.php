@@ -5,7 +5,7 @@
 
     <main>
            
-<?php require_once "headerCliente.php";?>
+<?php require_once "../headers/headerCliente.php";?>
 
   <div class="center"> 
 <h1>Bem vindo!</h1>

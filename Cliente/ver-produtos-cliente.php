@@ -8,7 +8,7 @@ $produto = mysqli_fetch_assoc($resultado);
 
 <title><?=$produto['nomeproduto']?></title>
 
-<?php require "headerCliente.php";?>
+<?php require "../headers/headerCliente.php";?>
 
 <body>
 <main class="container">

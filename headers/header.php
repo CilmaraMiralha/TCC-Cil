@@ -41,15 +41,15 @@ main{
         <li><a class="pink-text" href="entrar.php">Entrar</a></li>
         <li><a class="pink-text" href="cadastrar.php">Cadastre-se</a></li>
 
-        <li><a class="pink-text" href = "..carrinho/carrinho.php"><i class="material-icons">shopping_cart</i></a></li>
+        <li><a class="pink-text" href = "../carrinho/carrinho.php"><i class="material-icons">shopping_cart</i></a></li>
      
       </ul>
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
      <div class="row">
       <div class="col offset-s3">
-        <li class="tab"><a class="pink-text" href="inicio.php">Início</a></li>
-        <li class="tab"><a class="pink-text" href="produto-tela-visitante.php">Produtos</a></li>
+        <li class="tab"><a class="pink-text" href="../inicio/inicio.php">Início</a></li>
+        <li class="tab"><a class="pink-text" href="../inicio/produto-tela-visitante.php">Produtos</a></li>
         <li class="tab"><a class="pink-text" href="#">Sobre</a></li>
         <li class="tab"><a class="pink-text" href="#">Contato</a></li>
         

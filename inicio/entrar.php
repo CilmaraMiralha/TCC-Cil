@@ -28,7 +28,7 @@ require_once "../geral/funcoes.php";
 
 <body>
        <main>
-       <?php require_once "header.php";?>
+       <?php require_once "../headers/header.php";?>
        <br>
        <div class="container">
               <h3>Entrar:</h3>

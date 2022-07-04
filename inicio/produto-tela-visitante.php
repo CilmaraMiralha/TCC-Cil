@@ -7,7 +7,7 @@
 
 <title>Produtos</title>
 
-<?php require "header.php";?>
+<?php require "../headers/header.php";?>
 
 <body>
 <main class="container">
