@@ -42,7 +42,7 @@ require_once "../geral/funcoes.php";
 
 <body>
     <main>
-        <?php include_once "header.php";?>
+        <?php require_once "../headers/header.php";?>
         <div class="container">
 
         <h1>Cadastro:</h1>

@@ -11,7 +11,7 @@ $sql="SELECT * FROM clientes WHERE email='$email'";
 $resultado = mysqli_query($conexao,$sql);
 $cliente = mysqli_fetch_assoc($resultado);
 
-//var_dump($usuario);
+
 
 if(password_verify($senha, $cliente['senha'])){
     $_SESSION['id'] = $cliente['id'];

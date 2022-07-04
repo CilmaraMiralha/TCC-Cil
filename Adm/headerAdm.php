@@ -58,7 +58,7 @@ main{
         <li> 
     
 
-            <form action="../materialize/pesquisa.php">
+            <form action="../geral/pesquisa.php">
             <div class="input-field">
             <input id="search" type="search" class = "right" name="pesquisa">
             <label class="label-icon" for="search"><i class="material-icons pink-text">search</i></label>

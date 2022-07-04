@@ -38,8 +38,8 @@ main{
 
       <ul id="nav-mobile" class="right hide-on-med-and-down">
        
-        <li><a class="pink-text" href="entrar.php">Entrar</a></li>
-        <li><a class="pink-text" href="cadastrar.php">Cadastre-se</a></li>
+        <li><a class="pink-text" href="../inicio/entrar.php">Entrar</a></li>
+        <li><a class="pink-text" href="../inicio/cadastrar.php">Cadastre-se</a></li>
 
         <li><a class="pink-text" href = "../carrinho/carrinho.php"><i class="material-icons">shopping_cart</i></a></li>
      

@@ -10,8 +10,6 @@ if(isset($_SESSION['id'])){
 } else {
     require_once "../headers/header.php";
 }
-
-
 ?>
 
   <div class="center"> 
