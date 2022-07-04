@@ -1,6 +1,5 @@
 <?php
 require_once "../geral/funcoes.php";
-verificandoVisitante();
 ?>
     <title>Entrar na sua conta</title>
 

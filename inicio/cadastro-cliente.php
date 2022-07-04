@@ -2,7 +2,7 @@
 session_start();
 
 require_once "../conecta.php";
-require "funcoes.php";
+require "../geral/funcoes.php";
 
 $nome = $_POST['nome'];
 $sobrenome = $_POST['sobrenome'];
