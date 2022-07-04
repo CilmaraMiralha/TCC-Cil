@@ -1,7 +1,7 @@
 <?php 
 require_once "../geral/funcoes.php";
 verificandoCliente();
-
+var_dump($_SESSION);
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +47,7 @@ main{
            <li class="divider" tabindex="-1"></li>
            <li><a href="#!" class="pink-text">Ver conta</a></li>
            <li class="divider" tabindex="-1"></li>
-           <li><a class = "pink-text" href = "sairdaconta.php">Sair</a></li>
+           <li><a class = "pink-text" href = "../Cliente/sairdaconta.php">Sair</a></li>
          </ul></li>
 
          <li><a class="pink-text" href = "../carrinho/carrinho.php"><i class="material-icons">shopping_cart</i></a></li>

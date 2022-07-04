@@ -1,5 +1,6 @@
 <?php
 require_once "../geral/funcoes.php";
+var_dump($_SESSION);
 verificandoVisitante();
 ?>
 <!DOCTYPE html>
