@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "funcoes.php";
+require_once "../geral/funcoes.php";
 ?>
 
     <title>Cadastro</title>
@@ -101,4 +101,4 @@ require_once "funcoes.php";
 </main>
 </body>
 
-<?php require "../materialize/rodape.php";?>
+<?php require "../geral/rodape.php";?>

@@ -7,7 +7,7 @@
 
 <title>Produtos</title>
 
-<?php require "headerCliente.php";?>
+<?php require "header.php";?>
 
 <body>
 <main class="container">
@@ -27,7 +27,7 @@
           <p>Preço: R$ <?= $produto['preco']?></p>
         </div>
         <div class="card-action">
-        <?= "<a class='pink-text' href='ver-produtos-cliente.php?id=$produto[id]'>Ver mais</a>"; ?>
+        <?= "<a class='pink-text' href='ver-produto-visitante.php?id=$produto[id]'>Ver mais</a>"; ?>
               
 
 

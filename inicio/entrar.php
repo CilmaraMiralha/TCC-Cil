@@ -1,6 +1,6 @@
 <?php
-session_start();
-require_once "funcoes.php";
+require_once "../geral/funcoes.php";
+verificandoVisitante();
 ?>
     <title>Entrar na sua conta</title>
 
@@ -36,7 +36,7 @@ require_once "funcoes.php";
 <form action="entrar-cliente.php" method="POST">
 
        <div class="card-panel yellow lighten-5 container">
-       <div style="color: red;"><?= msg() ?></div>
+       <div style="color: red;"><?= mensagem() ?></div>
 
        <div class="row">
         <div class="input-field col s6">
@@ -62,4 +62,4 @@ require_once "funcoes.php";
        </div>
 </main>
 </body>
-<?php include_once "../materialize/rodape.php";?>
+<?php include_once "../geral/rodape.php";?>

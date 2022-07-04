@@ -1,9 +1,9 @@
 <?php 
-require_once "nivelAcesso-Cliente.php";
-
+require_once "../geral/funcoes.php";
+verificandoCliente();
 var_dump($_SESSION);
-?>
 
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -51,7 +51,7 @@ main{
            <li><a class = "pink-text" href = "sairdaconta.php">Sair</a></li>
          </ul></li>
 
-         <li><a class="pink-text" href = "carrinho.php"><i class="material-icons">shopping_cart</i></a></li>
+         <li><a class="pink-text" href = "..carrinho/carrinho.php"><i class="material-icons">shopping_cart</i></a></li>
       </ul>
 
     <div class="nav-content">
@@ -65,7 +65,7 @@ main{
         
         <li> 
 
-            <form action="../materialize/pesquisa.php">
+            <form action="../geral/pesquisa.php">
             <div class="input-field">
             <input id="search" type="search" class = "right" name="pesquisa">
             <label class="label-icon" for="search"><i class="material-icons pink-text">search</i></label>

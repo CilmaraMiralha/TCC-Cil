@@ -1,5 +1,7 @@
 <?php 
-require_once "nivelAcesso-Adm.php";
+require_once "../geral/funcoes.php";
+
+verificandoADM();
 ?>
 
 

@@ -1,5 +1,7 @@
-
-
+<?php
+require_once "../geral/funcoes.php";
+verificandoVisitante();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -38,6 +40,8 @@ main{
        
         <li><a class="pink-text" href="entrar.php">Entrar</a></li>
         <li><a class="pink-text" href="cadastrar.php">Cadastre-se</a></li>
+
+        <li><a class="pink-text" href = "..carrinho/carrinho.php"><i class="material-icons">shopping_cart</i></a></li>
      
       </ul>
     <div class="nav-content">
@@ -45,14 +49,14 @@ main{
      <div class="row">
       <div class="col offset-s3">
         <li class="tab"><a class="pink-text" href="inicio.php">Início</a></li>
-        <li class="tab"><a class="pink-text" href="#">Produtos</a></li>
+        <li class="tab"><a class="pink-text" href="produto-tela-visitante.php">Produtos</a></li>
         <li class="tab"><a class="pink-text" href="#">Sobre</a></li>
         <li class="tab"><a class="pink-text" href="#">Contato</a></li>
         
         <li> 
     
 
-            <form action="../materialize/pesquisa.php">
+            <form action="../geral/pesquisa.php">
             <div class="input-field">
             <input id="search" type="search" class = "right" name="pesquisa">
             <label class="label-icon" for="search"><i class="material-icons pink-text">search</i></label>

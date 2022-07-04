@@ -1,5 +1,5 @@
 
-    <title>Página inicial</title>
+   <title>Página inicial</title>
 
 <body>
 
@@ -16,4 +16,4 @@
     </main>
 </body>
 
-<?php include_once "../materialize/rodape.php"; ?>
+<?php include_once "../geral/rodape.php"; ?>
