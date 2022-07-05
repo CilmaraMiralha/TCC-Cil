@@ -4,7 +4,6 @@ session_start();
 
 }
 
-session_destroy();
-
+unset($_SESSION['id'], $_SESSION['nvl_acesso'], $_SESSION['nome']);
 header("Location: ../inicio/inicio.php");
 ?>

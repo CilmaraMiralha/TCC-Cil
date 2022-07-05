@@ -19,21 +19,23 @@ if(isset($_SESSION['id'])){
            
   <div class="center"> 
 <h1>Carrinho</h1>
-
-<?php 
-if(isset($_SESSION['carrinho']['id_carrinho']) and $_SESSION['carrinho']['id_carrinho'] != NULL){
-foreach($_SESSION['carrinho']['id_carrinho'] as $key => $produto){ ?>
-    <div class="row">
+<div class="row">
         <div class="col s12">
-            <?php echo $produto['nome'];
+<?php 
+if(isset($_SESSION['carrinho']) and $_SESSION['carrinho']!= NULL){
+foreach($_SESSION['carrinho'] as $key => $produto){ ?>
+    
+            <?php echo $produto['nomeproduto'];
                   echo $produto['preco']; ?>
-                  <a href = "removerProduto.php?id=<?=$produto['id_produto']?>">Remover do carrinho</a>
-        </div>
-    </div>
-</div>
+                  <a href = "removerProduto.php?id=<?=$produto['id']?>">Remover do carrinho</a>
+                  <br>
+    
 <?php }}else {
     echo "Não há produtos no carrinho";
 } ?>
+    </div>
+    </div>
+</div>
     </main>
 </body>
 

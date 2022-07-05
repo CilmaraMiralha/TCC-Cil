@@ -4,10 +4,8 @@ if(!isset($_SESSION)){
 }
 include('../conecta.php');
 $id_produto = $_GET['id'];
-$sql = "DELETE FROM carrinho WHERE id_produto = '$id_produto'";
-$resultado = mysqli_query($conexao, $sql);
-unset($_SESSION['carrinho']['id_carrinho'][$id_produto]);
-var_dump($_SESSION['carrinho']['id_carrinho']);
+unset($_SESSION['carrinho'][$id_produto]);
+
 $url = $_SERVER['HTTP_REFERER'];
 header("location:$url");
 
