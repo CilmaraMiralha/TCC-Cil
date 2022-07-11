@@ -39,7 +39,10 @@ if(!isset($_SESSION)){
                   
           
     <?php } ?>
-    </tbody> </table>
+
+    </tbody></table>
+
+    
 <?php }else{ ?>
     Não há produtos no carrinho
     <?php } ?>
