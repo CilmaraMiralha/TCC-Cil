@@ -35,7 +35,7 @@ function confirmacao(id) {
           <p>Preço: R$ <?= $produto['preco']?></p>
         </div>
         <div class="card-action">
-        <?php echo "<a class='pink-text' href='ver-produtos.php?id=$produto[id]'>Ver mais</a>";
+        <?php echo "<a class='pink-text' href='../inicio/ver-produto.php?id=$produto[id]'>Ver mais</a>";
               echo "<a class='pink-text' href='editar-produtos.php?id=$produto[id]'>Editar</a>";
               echo "<a class='pink-text' href='#' onclick = 'confirmacao($produto[id])'>Excluir</a>";?>
               

@@ -79,5 +79,9 @@
    coverTrigger: false
 });
   
+$(document).ready(function(){
+    $('.modal').modal();
+  });
+  
   </script>
  </html>

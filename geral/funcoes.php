@@ -56,17 +56,4 @@ function verificacaoHeader(){
     }
 }
 
-function verProdutos(){
-    if(!isset($_SESSION)){
-        session_start();
-    }
-    if(isset($_SESSION['id']) == 3){
-        require_once "../Cliente/ver-produtos-cliente.php";
-    } else if (isset($_SESSION['id']) == 2){
-        require_once "../Adm/ver-produtos.php";
-    } else {
-        require_once "../inicio/ver-produto-visitante.php";
-    }
-}
-
 ?>

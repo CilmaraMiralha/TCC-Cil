@@ -1,7 +1,7 @@
 <?php 
 require_once "../geral/funcoes.php";
 verificandoCliente();
-var_dump($_SESSION);
+//var_dump($_SESSION);
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ var_dump($_SESSION);
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <style>
-      body{
+ body{
     display: flex;
     min-height: 150vh;
     flex-direction: column;
@@ -57,8 +57,8 @@ main{
       <ul class="tabs tabs-transparent">
      <div class="row">
       <div class="col offset-s3">
-        <li class="tab"><a class="pink-text" href="inicio-Cliente.php">Início</a></li>
-        <li class="tab"><a class="pink-text" href="produto-tela-cliente.php">Produtos</a></li>
+        <li class="tab"><a class="pink-text" href="../Cliente/inicio-Cliente.php">Início</a></li>
+        <li class="tab"><a class="pink-text" href="../Cliente/produto-tela-cliente.php">Produtos</a></li>
         <li class="tab"><a class="pink-text" href="#">Sobre</a></li>
         <li class="tab"><a class="pink-text" href="#">Contato</a></li>
         

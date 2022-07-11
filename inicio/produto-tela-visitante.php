@@ -27,7 +27,7 @@
           <p>Preço: R$ <?= $produto['preco']?></p>
         </div>
         <div class="card-action">
-        <?= "<a class='pink-text' href='ver-produto-visitante.php?id=$produto[id]'>Ver mais</a>"; ?>
+        <?= "<a class='pink-text' href='ver-produto.php?id=$produto[id]'>Ver mais</a>"; ?>
               
 
 
