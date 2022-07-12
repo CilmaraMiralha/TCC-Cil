@@ -21,11 +21,12 @@ if(!isset($_SESSION)){
 
   <div class="center container"> 
 <h1>Carrinho</h1>
-<div class="card-panel grey lighten-4">
+
 
         <?php 
+        
     if(isset($_SESSION['carrinho']) and $_SESSION['carrinho']!= NULL){ ?>
-    
+    <div class="card-panel grey lighten-4">
 <table>
 
 <thead> <tr> <th>Foto</th> <th>Nome do produto</th> <th>Descrição</th> <th>Quantidade</th> <th>Preço</th> <th></th> </tr></thead>
@@ -47,14 +48,17 @@ if(!isset($_SESSION)){
     <?php } ?>
 
     </tbody></table>
-
+    </div>
+    <a href="../inicio/produtos.php" class="waves-effect waves-light btn pink left">Adicionar mais produtos</a>
 
 <?php }else{ ?>
+    <div class="card-panel grey lighten-4">
     Não há produtos no carrinho
+    </div>
+    <a href="../inicio/produtos.php" class="waves-effect waves-light btn pink left">Adicionar produtos</a>
     <?php } ?>
 
-</div>
-<a href="../inicio/produtos.php" class="waves-effect waves-light btn pink left">Adicionar mais produtos</a>
+
 <a href="#" class="waves-effect waves-light btn pink right">Finalizar pedido</a> <br>
 <br>
 </div>
