@@ -43,21 +43,26 @@ echo "<p>Nome do produto: $produto[descricao]</p>";
 <br><br>
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
+  <form action="../carrinho/addcarrinho.php">
+
     <div class="modal-content">
       <h4>Encomenda personalizada</h4>
       <p>Precisamos de informações!</p>
       <p>Como quer que seja seu produto?</p>
-
       <div class="row">
             <div class="input-field col s6">
-            <textarea class="materialize-textarea" id="descricao" type="text" class="validate" name="descricao" placeholder="Cabelo de cor marrom, roupa amarela, etc..." required></textarea>
-            </div>
+            <textarea class="materialize-textarea" id="observacao" type="text" class="validate" name="observacao" placeholder="Cabelo de cor marrom, roupa amarela, etc..." required></textarea>
+           <input type="hidden" value="<?=$produto['id']?>" name="id">
+          </div>
         </div>
 
     </div>
+
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat pink-text">Adicionar ao carrinho</a>
-    </div>
+    <button class="modal-close waves-effect waves-green btn-flat pink-text" type="submit" name="add">Adicionar ao carrinho</button>
+      
+
+    </form>
   </div>
   <?php }?>
 </main>

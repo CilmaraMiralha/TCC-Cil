@@ -1,5 +1,6 @@
 <?php
     require_once "../conecta.php";
+    require_once "../geral/funcoes.php";
     $sql = "SELECT * FROM produtos";
     $resultado = mysqli_query($conexao, $sql);
     $produtos = mysqli_fetch_all($resultado, MYSQLI_ASSOC); 
@@ -7,7 +8,7 @@
 
 <title>Produtos</title>
 
-<?php require "../headers/header.php";?>
+<?php verificacaoHeader() ?>
 
 <body>
 <main class="container">
@@ -18,7 +19,7 @@
               ?>
               
                 <div class="col s12 m4">
-                <div class="card medium">
+                <div class="card medium hoverable">
                   <div class="card-image">
          <img width = 200 src= "../imagens/<?= $produto['foto'] ?>">
         </div>
@@ -27,7 +28,7 @@
           <p>Preço: R$ <?= $produto['preco']?></p>
         </div>
         <div class="card-action">
-        <?= "<a class='pink-text' href='ver-produto.php?id=$produto[id]'>Ver mais</a>"; ?>
+        <?= "<a class='pink-text' href='../inicio/ver-produto.php?id=$produto[id]'>Ver mais</a>"; ?>
               
 
 

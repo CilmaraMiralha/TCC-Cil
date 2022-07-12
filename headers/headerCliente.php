@@ -58,7 +58,7 @@ main{
      <div class="row">
       <div class="col offset-s3">
         <li class="tab"><a class="pink-text" href="../Cliente/inicio-Cliente.php">Início</a></li>
-        <li class="tab"><a class="pink-text" href="../Cliente/produto-tela-cliente.php">Produtos</a></li>
+        <li class="tab"><a class="pink-text" href="../inicio/produtos.php">Produtos</a></li>
         <li class="tab"><a class="pink-text" href="#">Sobre</a></li>
         <li class="tab"><a class="pink-text" href="#">Contato</a></li>
         

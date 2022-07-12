@@ -34,7 +34,13 @@ if(!isset($_SESSION)){
 <?php   foreach($_SESSION['carrinho'] as $key => $produto){ ?>
     
             <?php 
-            echo "<tr> <td> <img src = '../imagens/$produto[foto]' width = '200'> </td> <td>". $produto['nomeproduto'] . "</td> <td>Descrição</td> <td>Quantidade</td>";
+            echo "<tr><td><img src = '../imagens/$produto[foto]' width = '200'> </td> <td>". $produto['nomeproduto'] . "</td><td>";
+            if (!isset($produto['observacao'])){
+                echo "Não há observação";
+            } else {
+                echo $produto['observacao'];
+            }
+            echo "</td><td>Quantidade</td>";
                   echo "<td>" . $produto['preco'] . "</td> <td>"; ?> <a href = "removerProduto.php?id=<?=$produto['id']?>"><i class='material-icons pink-text'>delete</i></a></td></tr>
                   
           
@@ -42,12 +48,15 @@ if(!isset($_SESSION)){
 
     </tbody></table>
 
-    
+
 <?php }else{ ?>
     Não há produtos no carrinho
     <?php } ?>
 
 </div>
+<a href="../inicio/produtos.php" class="waves-effect waves-light btn pink left">Adicionar mais produtos</a>
+<a href="#" class="waves-effect waves-light btn pink right">Finalizar pedido</a> <br>
+<br>
 </div>
     </main>
 </body>

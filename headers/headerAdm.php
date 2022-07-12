@@ -81,8 +81,6 @@ main{
 
     <li><a href="#" class="sidenav-close"><i class="material-icons right">close</i></a></li>
     <li><div class="divider"></div></li>
-    <li><a href="lista-produtos.php">Ver produtos</a></li>
-    <li><div class="divider"></div></li>
     <li><a href="form-cadastro-produtos.php">Cadastrar produtos</a></li>
     <li><div class="divider"></div></li>
     <li><a href="lista-pedidos.php">Ver pedidos</a></li>
