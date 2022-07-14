@@ -32,20 +32,39 @@ function confirmacao(id) {
         </div>
         <div class="card-content">
         <span class='card-title'><?= $produto['nomeproduto']?></span>
-          <p>Preço: R$ <?= $produto['preco']?></p>
+          <span>Preço: R$ <?= $produto['preco']?></span>
         </div>
+
+        
+
         <div class="card-action">
-        <?php echo "<a class='pink-text' href='../inicio/ver-produto.php?id=$produto[id]'>Ver mais</a>";
-              echo "<a class='pink-text' href='editar-produtos.php?id=$produto[id]'>Editar</a>";
-              echo "<a class='pink-text' href='#' onclick = 'confirmacao($produto[id])'>Excluir</a>";?>
-              
-
-
+          <div class="row">
+        <a class='pink-text' href='../inicio/ver-produto.php?id=<?=$produto['id'];?>'>Ver mais</a>
+        <a class='pink-text' href='editar-produtos.php?id=<?=$produto['id'];?>'>Editar</a>
+        <a class="modal-trigger pink-text" href="#modal<?= $produto['id']; ?>">Excluir</a>
+        </div>
         </div>
         </div>
     </div>
         <?php } ?>
         </div>
+
+        <!-- Modal Structure -->
+<div id="modal<?= $produto['id']; ?>" class="modal">
+  <div class="modal-content">
+    <h4>Excluir produto:</h4>
+    <p>Você confirma a exclusão do produto <span style="font-weight: bold"> <?= $produto['nomeproduto']; ?></span>?</p>
+  </div>
+  <div class="modal-footer">
+    <form action = "excluir-produtos.php">
+    <input type = "hidden" name="id" value="<?= $produto['id']; ?>"> 
+    <button type="submit" name="excluir" class="modal-action modal-close btn waves-light pink"> Excluir </button>
+    <button type="button" name="cancelar" class="modal-action modal-close btn waves-light pink" > Cancelar</button>
+    </form>
+  </div>
+</div>
+
+
 </main>
 </body>
 
