@@ -33,7 +33,7 @@ echo "<img src = '../imagens/$produto[foto]' width = '200'>";
 echo "<p>Nome do produto: $produto[nomeproduto]</p>";
 echo "<p>Preço: R$$produto[preco]</p>";
 echo "<p>Quantidade disponível: $produto[quantidade]</p>";
-echo "<p>Nome do produto: $produto[descricao]</p>";
+echo "<p>Descrição do produto: $produto[descricao]</p>";
 ?>
 
 <?php if (!isset ($_SESSION ['id']) OR $_SESSION['nvl_acesso'] != 2){ ?>
